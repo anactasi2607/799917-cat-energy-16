@@ -26,7 +26,73 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="page-main">
+      <section class="form">
+        <h1 class="form__title main-title">Подбор программы</h1>
+        <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <div class="questionnaire">
+            <label class="questionnaire__name-label" for="pet-name">Имя:*</label>
+            <input class="questionnaire__name" id="pet-name" type="text" name="pet-name" placeholder="Барсик">
+            <label class="questionnaire__weight-label">Вес (кг):*</label>
+            <input class="questionnaire__weight" name="pet-weight" type="number" placeholder="7">
+            <label class="questionnaire__age-label">Возраст (лет):*</label>
+            <input class="questionnaire__age" name="pet-age" type="number" placeholder="7">
+          </div>
+          <div class="mission">
+            <ul class="mission__list">
+              <li class="mission__item">
+                <input class="mission__slim" type="radio" name="mission" value="slim" id="slim" checked>
+                <label for="slim">Похудение</label>
+              </li>
+              <li class="mission__item">
+                <input class="mission__weight-gain" type="radio" name="mission" value="weight-gain" id="weight-gain">
+                <label for="weight-gain">Набор массы</label>
+              </li>
+              <li class="mission__item">
+                <input class="mission__unknown" type="radio" name="mission" value="unknown" id="unknown">
+                <label for="unknown">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
+          <div class="owner">
+            <h2 class="owner__title">Контактные данные(владельца кота)</h2>
+            <label class="owner__mail-label" for="owner-mail">E-mail:*</label>
+            <input class="owner__mail" id="owner-mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com">
+            <label class="owner__tel-label" for="owner-tel">Телефон:*</label>
+            <input class="owner__tel" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90">
+          </div>
+          <div class="comment">
+            <h2 class="comment-title">Комментарий</h2>
+            <label class="comment__text-label visually-hidden" for="comment-field"></label>
+            <textarea class="comment__text" name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          <div class="options">
+            <h2 class="options__title">Дополнительно</h2>
+            <ul class="options__list">
+              <li class="options__item">
+                <input class="options__sweetener" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="options__item">
+                <input class="options__water" type="checkbox" name="water" id="water">
+                <label for="water">Питьевая вода</label>
+              </li>
+              <li class="options__item">
+                <input class="options__milk" type="checkbox" name="milk" id="milk">
+                <label for="milk">Молоко</label>
+              </li>
+              <li class="options__item">
+                <input class="options__vitamins" type="checkbox" name="vitamins" id="vitamins">
+                <label for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </div>
+          <button type="submit" class="filter-button button">Отправить заявку</button>
+          <p class="filter__footnote">* — Обязательные поля</p>
+        </form>
+      </section>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a href="index.html" class="page-footer__logo">
