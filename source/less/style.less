@@ -1,15 +1,55 @@
+@import "normalize.less";
 
+@import "mixin.less";
+
+@import "variable.less";
+
+@import "page-header.less";
+
+@import "site-list.less";
+
+@import "promo.less";
+
+@import "training-programs.less";
+
+@import "advantages.less";
+
+@import "page-footer.less";
+
+@import "social__list.less";
+
+@import "catalog.less";
+
+@import "more.less";
+
+@import "copyright.less";
+
+@import "main-nav.less";
+
+@import "page-main.less";
+
+@font-face {
+  font-family: Oswald;
+  src: url('oswaldmedium.woff2')
+         format('woff2'),
+       url('oswaldmedium.woff')
+         format('woff')
+       url('oswaldregular.woff2')
+         format('woff2'),
+       url('oswaldregular.woff')
+         format('woff')
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  min-width: 320px;
+  .zero;
+
+  font-family: @arial;
+  .size(14px; 18px);
   font-weight: normal;
+
   color: #444444;
   background-color: #ffffff;
-  min-width: 320px;
 }
 
 a {
@@ -51,7 +91,30 @@ label.visually-hidden {
   overflow: hidden;
 }
 
-.promo {
-@import "promo.less";}
+
+.button-green {
+  color: #ffffff;
+  background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+}
+
+.button {
+  display: block;
+  min-width: 280px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-family: @oswaldr;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+
 
 
