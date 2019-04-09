@@ -1,102 +1,18 @@
-@import "normalize.less";
-@import "mixin.less";
-@import "variable.less";
-@import "page-header.less";
-@import "site-list.less";
-@import "promo.less";
-@import "training-programs.less";
-@import "advantages.less";
-@import "page-footer.less";
-@import "social__list.less";
-@import "catalog.less";
-@import "more.less";
-@import "copyright.less";
-@import "main-nav.less";
-@import "page-main.less";
-
-@font-face {
-  font-family: "Oswald";
-  src: url("oswaldmedium.woff2")
-    format("woff2"),
-    url("oswaldmedium.woff")
-    format("woff")
-    url("oswaldregular.woff2")
-    format("woff2"),
-    url("oswaldregular.woff")
-    format("woff");
-}
-
-body {
-  min-width: 320px;
-  .zero;
-
-  font-family: @arial;
-  .size(14px; 18px);
-  font-weight: normal;
-
-  color: #444444;
-  background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-li {
-  list-style: none;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden,
-label.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-
-.button-green {
-  color: #ffffff;
-  background-color: #68b738;
-
-  &:hover {
-    background-color: #5eaa2f;
-  }
-}
-
-.button {
-  display: block;
-  min-width: 280px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  font-family: @oswaldr;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: center;
-
-  cursor: pointer;
-}
+@import "global/normalize.less";
+@import "global/variables.less";
+@import "global/fonts.less";
+@import "global/mixin.less";
+@import "global/common.less";
+@import "blocks/page-header.less";
+@import "blocks/site-list.less";
+@import "blocks/promo.less";
+@import "blocks/training-programs.less";
+@import "blocks/advantages.less";
+@import "blocks/page-footer.less";
+@import "blocks/social-list.less";
+@import "blocks/catalog.less";
+@import "blocks/more.less";
+@import "blocks/copyright.less";
+@import "blocks/main-nav.less";
+@import "blocks/page-main.less";
+@import "blocks/main-title.less";
