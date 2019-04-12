@@ -23,3 +23,32 @@
   margin-bottom: 26px;
   padding-left: 80px;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    padding: 0 30px;
+  }
+
+  .advantages__title {
+    .size(60px; 60px);
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 354px;
+    min-height: 300px;
+    padding: 0;
+
+    .size(16px; 24px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item {
+    width: 254px;
+  }
+}
