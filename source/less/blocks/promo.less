@@ -8,8 +8,10 @@
   position: relative;
   padding-top: 28px;
   text-align: center;
+}
 
-  ::before {
+.promo__title {
+  &::before {
     content: "";
     position: absolute;
     width: 280px;
@@ -20,9 +22,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-}
 
-.promo__title {
   margin: 0;
   margin-bottom: 25px;
 
@@ -55,16 +55,30 @@
 
 @media (min-width: @tablet-width) {
   .promo {
+    padding-bottom: 500px;
+
     background-image: none;
   }
 
   .promo__button {
-    margin-bottom: 580px;
+    position: absolute;
 
     .size(20px; 20px);
   }
 
   .promo__title {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 552px;
+      height: 499px;
+      left: 90px;
+      top: 220px;
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
     .size(60px; 60px);
     text-align: left;
 
@@ -83,5 +97,28 @@
   .promo__wrapper {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__title {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 552px;
+      height: 499px;
+      left: 400px;
+      top: 0;
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    padding-right: 800px;
+  }
+
+  .promo__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
