@@ -1,7 +1,6 @@
 .training-programs__list {
   .zero;
-  width: 280px;
-  margin-left: 20px;
+  min-width: 280px;
 }
 
 .training-programs__item {
@@ -55,5 +54,33 @@
 }
 
 .training-programs__wrapper {
-  .wrapper;
+  padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .training-programs__item {
+    padding-right: 350px;
+  }
+
+  .training-programs__description {
+    .size(16px; 24px);
+  }
+
+  .training-programs__title {
+    .size(36px; 37px);
+  }
+
+  .training-programs__link {
+    .size(20px; 20px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .training-programs__list {
+    display: flex;
+  }
+
+  .training-programs__item {
+    margin: 0 40px;
+  }
 }

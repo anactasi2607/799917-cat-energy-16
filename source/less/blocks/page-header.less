@@ -16,3 +16,19 @@
 .page-header__wrapper {
   .wrapper;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: @tablet-width;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    width: 1440px;
+    padding: 0 110px;
+  }
+}

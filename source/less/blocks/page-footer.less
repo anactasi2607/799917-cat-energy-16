@@ -22,3 +22,19 @@
 
   background-color: #f2f2f2;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: @tablet-width;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 1400px;
+    padding: 0 110px;
+  }
+}
