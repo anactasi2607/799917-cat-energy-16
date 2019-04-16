@@ -1,5 +1,5 @@
 .more {
-  padding-top: 80px;
+  padding: 80px 20px 23px 20px;
 }
 
 .more__text {
@@ -19,7 +19,10 @@
 }
 
 .more__show {
+  position: relative;
+
   .zero;
+  padding-bottom: 7px;
 
   font-family: @oswaldr;
   .size(16px; 20px);
@@ -28,6 +31,24 @@
   text-align: center;
 
   color: #111111;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -40px;
+    left: 125px;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #d3d3d3;
+  }
+
+  &::after {
+    transform: rotate(-90deg);
+  }
 }
 
 @media (min-width: @tablet-width) {

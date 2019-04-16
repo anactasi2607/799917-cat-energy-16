@@ -13,7 +13,13 @@
   .border;
 }
 
+.training-programs__item:last-of-type {
+  margin-bottom: 17px;
+}
+
 .training-programs__title {
+  position: relative;
+
   margin: 0;
   margin-left: 71px;
   margin-bottom: 29px;
@@ -24,6 +30,59 @@
   text-transform: uppercase;
 
   color: #111111;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    right: 188px;
+    top: -6px;
+
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 50%;
+  }
+}
+
+.training-programs__title--slim {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 35px;
+    height: 49px;
+    right: 195px;
+    top: -8px;
+    z-index: 3;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.training-programs__title--pro {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 67px;
+    height: 28px;
+    right: 180px;
+    top: 5px;
+    z-index: 3;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .training-programs__description {
@@ -34,6 +93,8 @@
 }
 
 .training-programs__link {
+  position: relative;
+
   display: block;
   margin-bottom: 20px;
 
@@ -51,10 +112,24 @@
   &:active {
     opacity: 0.3;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 24px;
+    height: 11px;
+    left: 96px;
+    top: 2px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .training-programs__wrapper {
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
