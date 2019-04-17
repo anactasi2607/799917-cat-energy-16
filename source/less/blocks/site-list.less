@@ -32,9 +32,39 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    min-width: 440px;
+  }
+
+  .site-list__item {
+    border: none;
+  }
+
+  .site-list__item:last-child {
+    border: none;
   }
 
   .site-list__link {
-    .size(18px; 25px);
+    font-family: @oswaldr;
+    .size(18px; 24.86px);
+    font-weight: normal;
+  }
+
+  .site-list__item--active {
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 55px;
+      left: 0;
+
+      height: 2px;
+      width: 100%;
+
+      border-bottom: 2px solid #68b738;
+    }
   }
 }

@@ -133,20 +133,85 @@
 }
 
 @media (min-width: @tablet-width) {
+  .training-programs__wrapper {
+    padding: 0 30px;
+    margin-bottom: 45px;
+  }
+
   .training-programs__item {
-    padding-right: 350px;
+    padding-top: 76px;
+    padding-left: 52px;
+    margin-bottom: 28px;
+
+    border: 1px solid transparent;
+  }
+
+  .training-programs__item:first-child {
+    padding-right: 280px;
+  }
+
+  .training-programs__item:last-child {
+    padding-right: 310px;
   }
 
   .training-programs__description {
     .size(16px; 24px);
+
+    border: none;
   }
 
   .training-programs__title {
+    margin-left: 0;
+    margin-bottom: 25px;
+
     .size(36px; 37px);
   }
 
   .training-programs__link {
+    margin-bottom: 62px;
+
     .size(20px; 20px);
+  }
+
+  .training-programs__title {
+    &::after {
+      left: 393px;
+      top: 17px;
+
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .training-programs__title--slim {
+    &::before {
+      left: 425px;
+      top: 5px;
+
+      width: 140px;
+      height: 194px;
+    }
+  }
+
+  .training-programs__title--pro {
+    &::before {
+      left: 360px;
+      top: 60px;
+
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  .training-programs__description {
+    margin-bottom: 36px;
+  }
+
+  .training-programs__link {
+    &::after{
+      left: 132px;
+      top: 5px;
+    }
   }
 }
 
