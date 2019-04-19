@@ -9,29 +9,35 @@
     display: none;
   }
 
-  .main-nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 190px;
-  z-index: 2;
+  .main-nav {
+    position: relative;
+  }
 
-  display: block;
-  width: 64px;
-  height: 64px;
+  .main-nav__toggle {
+    position: absolute;
+    top: -63px;
+    right: 0px;
+    z-index: 2;
+
+    display: block;
+    width: 64px;
+    height: 64px;
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
 
-  position: absolute;
-  top: 21px;
-  left: 20px;
+    position: absolute;
+    top: 21px;
+    left: 20px;
 
-  width: 24px;
-  height: 2px;
+    width: 24px;
+    height: 2px;
 
-  background-color: #222222;
-  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+    background-color: #222222;
+    box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+  }
 }
 
 .main-nav--closed .main-nav__toggle:active::before {

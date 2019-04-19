@@ -58,9 +58,38 @@
 @media (min-width: @tablet-width) {
   .more__show {
     .size(20px; 20px);
+
+    &::before,
+    &::after {
+      top: -82px;
+      left: 55px;
+
+      width: 60px;
+      height: 2px;
+    }
   }
 
   .more__text {
     .size(16px; auto);
+  }
+
+  .more {
+    background-color: #ffffff;
+  }
+
+  .more__show {
+    width: 170px;
+    margin-bottom: 20px;
+  }
+
+  .more__text {
+    width: 170px;
+    margin-bottom: 87px;
+  }
+
+  .more__button {
+    min-width: 249px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
