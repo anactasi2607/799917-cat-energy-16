@@ -68,3 +68,22 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+
+    color: #ffffff;
+  }
+
+  .site-list {
+    min-width: 480px;
+  }
+
+  .site-list__item--active {
+  &::before {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  }
+}

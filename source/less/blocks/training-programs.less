@@ -139,7 +139,7 @@
   }
 
   .training-programs__item {
-    padding-top: 76px;
+    padding-top: 75px;
     padding-left: 52px;
     margin-bottom: 28px;
 
@@ -216,11 +216,71 @@
 }
 
 @media (min-width: @desktop-width) {
+
+  .training-programs {
+    margin-bottom: 73px;
+  }
+
   .training-programs__wrapper {
     padding: 0 40px;
+    margin-bottom: 45px;
   }
 
   .training-programs__list {
     display: flex;
+  }
+
+  .training-programs__item {
+    width: 570px;
+    margin-bottom: 0;
+  }
+
+  .training-programs__title {
+    margin-left: 160px;
+    margin-bottom: 75px;
+  }
+
+  .training-programs__description {
+    margin-bottom: 10px;
+  }
+
+  .training-programs__item:first-child,
+  .training-programs__item:last-child {
+    padding-right: 50px;
+  }
+
+  .training-programs__item:first-child {
+    margin-right: 80px;
+  }
+
+  .training-programs__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .training-programs__title {
+    &::after {
+      left: -160px;
+      top: -30px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .training-programs__title--slim {
+    &::before {
+      left: -146px;
+      top: -35px;
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  .training-programs__title--pro {
+    &::before {
+      left: -180px;
+      top: -5px;
+      width: 134px;
+      height: 56px;
+    }
   }
 }
