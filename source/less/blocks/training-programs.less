@@ -13,7 +13,13 @@
   .border;
 }
 
+.training-programs__item:last-of-type {
+  margin-bottom: 17px;
+}
+
 .training-programs__title {
+  position: relative;
+
   margin: 0;
   margin-left: 71px;
   margin-bottom: 29px;
@@ -24,6 +30,59 @@
   text-transform: uppercase;
 
   color: #111111;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    right: 188px;
+    top: -6px;
+
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 50%;
+  }
+}
+
+.training-programs__title--slim {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 35px;
+    height: 49px;
+    right: 195px;
+    top: -8px;
+    z-index: 3;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.training-programs__title--pro {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 67px;
+    height: 28px;
+    right: 180px;
+    top: 5px;
+    z-index: 3;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .training-programs__description {
@@ -34,6 +93,8 @@
 }
 
 .training-programs__link {
+  position: relative;
+
   display: block;
   margin-bottom: 20px;
 
@@ -51,36 +112,166 @@
   &:active {
     opacity: 0.3;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 24px;
+    height: 11px;
+    left: 96px;
+    top: 2px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .training-programs__wrapper {
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
+  .training-programs__wrapper {
+    padding: 0 30px;
+    margin-bottom: 45px;
+  }
+
   .training-programs__item {
-    padding-right: 350px;
+    padding-top: 75px;
+    padding-left: 52px;
+    margin-bottom: 28px;
+
+    border: 1px solid transparent;
+  }
+
+  .training-programs__item:first-child {
+    padding-right: 280px;
+  }
+
+  .training-programs__item:last-child {
+    padding-right: 310px;
   }
 
   .training-programs__description {
+    margin-bottom: 36px;
+
     .size(16px; 24px);
+
+    border: none;
   }
 
   .training-programs__title {
+    margin-left: 0;
+    margin-bottom: 25px;
+
     .size(36px; 37px);
+
+    &::after {
+      left: 393px;
+      top: 17px;
+
+      width: 200px;
+      height: 200px;
+    }
   }
 
   .training-programs__link {
+    margin-bottom: 62px;
+
     .size(20px; 20px);
+
+    &::after {
+      left: 132px;
+      top: 5px;
+    }
+  }
+
+  .training-programs__title--slim {
+    &::before {
+      left: 425px;
+      top: 5px;
+
+      width: 140px;
+      height: 194px;
+    }
+  }
+
+  .training-programs__title--pro {
+    &::before {
+      left: 360px;
+      top: 60px;
+
+      width: 268px;
+      height: 112px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .training-programs {
+    margin-bottom: 73px;
+  }
+
   .training-programs__wrapper {
     padding: 0 40px;
+    margin-bottom: 45px;
   }
 
   .training-programs__list {
     display: flex;
+  }
+
+  .training-programs__item {
+    width: 570px;
+    margin-bottom: 0;
+  }
+
+  .training-programs__title {
+    margin-left: 160px;
+    margin-bottom: 75px;
+
+    &::after {
+      left: -160px;
+      top: -30px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .training-programs__description {
+    margin-bottom: 10px;
+  }
+
+  .training-programs__item:first-child,
+  .training-programs__item:last-child {
+    padding-right: 50px;
+  }
+
+  .training-programs__item:first-child {
+    margin-right: 80px;
+  }
+
+  .training-programs__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .training-programs__title--slim {
+    &::before {
+      left: -146px;
+      top: -35px;
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  .training-programs__title--pro {
+    &::before {
+      left: -180px;
+      top: -5px;
+      width: 134px;
+      height: 56px;
+    }
   }
 }

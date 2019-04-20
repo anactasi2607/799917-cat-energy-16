@@ -1,5 +1,56 @@
+.copyright {
+  padding: 30px 0 10px;
+}
+
 .copyright__link {
+  position: relative;
+
   .size(16px; 16px);
 
   color: #444444;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  svg {
+    position: absolute;
+    top: -13px;
+    left: 247px;
+
+    width: 40px;
+    height: 45px;
+  }
+}
+
+.copyright__link-icon {
+  path {
+    fill: #666666;
+  }
+
+  &:hover {
+    path {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding-right: 46px;
+    padding-top: 21px;
+  }
+
+  .copyright__link {
+    svg {
+      top: -13px;
+      left: 129px;
+    }
+  }
 }
