@@ -59,8 +59,8 @@
 
 @media (min-width: @tablet-width) {
   .more__show {
-    width: 180px;
-    padding-left: 40px;
+    width: 200px;
+    padding-left: 50px;
     margin-bottom: 20px;
 
     .size(20px; 20px);
@@ -68,7 +68,7 @@
     &::before,
     &::after {
       top: -82px;
-      left: 55px;
+      left: 95px;
 
       width: 60px;
       height: 2px;
@@ -76,7 +76,7 @@
   }
 
   .more__text {
-    width: 200px;
+    width: 230px;
     padding-left: 20px;
     margin-bottom: 87px;
 
@@ -84,7 +84,7 @@
   }
 
   .more {
-    padding: 163px 52px 40px;
+    padding: 165px 37px 40px;
 
     background-color: #ffffff;
   }
@@ -93,5 +93,27 @@
     width: 249px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more__show {
+    width: 160px;
+    padding-left: 10px;
+
+    &::before,
+    &::after {
+      top: -79px;
+      left: 55px;
+    }
+  }
+
+  .more__text {
+    width: 170px;
+    padding-left: 0;
+  }
+
+  .more__button {
+    width: 169px;
   }
 }
