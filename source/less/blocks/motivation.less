@@ -2,12 +2,13 @@
   padding: 16px 20px 20px 20px;
   margin-bottom: 25px;
 
-  background-color: #f2f2f2;
-  background-image: url("../img/before-mobile@1x.png");
-  background-position: 0 377px;
-  background-repeat: no-repeat;
-
   color: #111111;
+}
+
+.motivation__wrapper {
+  .wrapper;
+
+  background-color: #f2f2f2;
 }
 
 .motivation__title {
@@ -28,6 +29,16 @@
 
 .motivation__list {
   margin-bottom: 25px;
+}
+
+.motivation__list tbody {
+  display: flex;
+}
+
+.motivation__list tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .motivation__value {
@@ -53,4 +64,51 @@
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation {
+    .zero;
+
+    background-color: #ffffff;
+  }
+
+  .motivation__wrapper {
+    .tablet-wrapper;
+  }
+
+  .motivation__title {
+    margin-bottom: 65px;
+
+    .size(60px; 60px);
+  }
+
+  .motivation__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .motivation__text {
+    margin-bottom: 65px;
+
+    .size(16px; 24px);
+  }
+
+  .motivation__value {
+    .size(30px; 37px);
+  }
+
+  .motivation__field {
+    .size(14px; 14px);
+  }
+
+  .motivation__cost {
+    .size(20px; 20px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .motivation__wrapper {
+    .desktop-wrapper;
+  }
 }
