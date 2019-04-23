@@ -1,10 +1,10 @@
-.contacts {
+.contacts__wrapper {
+  .wrapper;
+}
+
+.contacts__text {
   display: flex;
   flex-wrap: wrap;
-
-  .wrapper;
-
-  background-color: #f2f2f2;
 }
 
 .contacts__invite {
@@ -27,22 +27,43 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    width: 768px;
+  .contacts__wrapper {
+    .tablet-wrapper;
+  }
+
+  .contacts__text {
     justify-content: space-around;
   }
 
   .contacts__map {
-    width: 767px;
     min-height: 400px;
+
+    margin: 0 auto;
   }
 
 }
 
 
 @media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    position: relative;
+    .desktop-wrapper;
+  }
+
   .contacts__map {
     width: auto;
     min-height: 405px;
+  }
+
+  .contacts__text {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
+
+    width: 570px;
+    height: 201px;
+
+    background-color: #ffffff;
   }
 }
