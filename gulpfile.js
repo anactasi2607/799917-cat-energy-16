@@ -70,7 +70,7 @@ gulp.task("images", function () {
   });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png, jpg}")
+  return gulp.src("source/img/**/*")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
   });
@@ -110,3 +110,4 @@ gulp.task("clean", function () {
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
+
