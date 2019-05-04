@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/minstyle.css" rel="stylesheet">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymus">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -24,15 +25,15 @@
         <nav class="page-header__menu main-nav">
           <a class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></a>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+            <ul class="main-nav__list site-list site-list--form">
+              <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link">Подбор программы</a>
+                <a class="site-list__link site-list__item--active">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -131,7 +132,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<svg class="copyright__link-icon" width="27" height="34"><use xlink:href="#academy-logo"></use></svg></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<svg class="copyright__link-icon" width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg></a>
         </div>
       </div>
     </footer>
