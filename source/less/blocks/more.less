@@ -69,6 +69,7 @@
 
 @media (min-width: @tablet-width) {
   .more__show {
+    position: relative;
     width: 200px;
     padding-left: 50px;
     margin-bottom: 20px;
@@ -78,8 +79,9 @@
     &::before,
     &::after {
       content: "";
-      position: absolute;
 
+      position: absolute;
+      display: block;
       top: -82px;
       left: 95px;
 
