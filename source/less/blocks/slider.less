@@ -5,6 +5,30 @@
   text-transform: uppercase;
 }
 
+.slider {
+  padding-left: 43px;
+}
+
+.slider-controls {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+
+    width: 84px;
+    height: 14px;
+    top: 3px;
+    left: 56px;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+  }
+}
+
+.slider-controls-item:first-child {
+  margin-right: 118px;
+}
 
 @media (min-width: @tablet-width) {
   .slider {

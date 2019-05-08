@@ -5,6 +5,9 @@
 .contacts__text {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 4px 20px 25px;
 }
 
 .contacts__invite {
@@ -24,6 +27,29 @@
   .zero;
 
   line-height: 20px;
+}
+
+.contacts__map {
+  display: block;
+}
+
+.contacts__picture {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 135px;
+    top: 140px;
+    z-index: 5;
+
+    width: 55px;
+    height: 53px;
+
+    background-image: url(../img/map-pin-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
