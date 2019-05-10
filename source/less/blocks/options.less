@@ -1,0 +1,47 @@
+.options {
+  .border-green;
+}
+
+.options__title {
+  width: 185px;
+  margin-top: -16px;
+  margin-bottom: 35px;
+  padding-left: 20px;
+
+  background-color: #fff;
+}
+
+.options__item {
+  position: relative;
+}
+
+.options__item input + label {
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -45px;
+    top: -2px;
+
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+  }
+}
+
+.options__item input:checked + label {
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    left: -37px;
+    top: 5px;
+
+    background-image: url(../img/icon-tick.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

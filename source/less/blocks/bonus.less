@@ -4,7 +4,9 @@
 }
 
 .bonus__wrapper {
-  padding-top: 180px;
+  padding-top: 187px;
+  padding-left: 55px;
+  margin-bottom: 32px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
@@ -12,13 +14,28 @@
 }
 
 .bonus-text {
+  position: relative;
   .zero;
   padding-bottom: 70px;
+  width: 170px;
 
   .size(16px; 20px);
   font-weight: normal;
+  text-align: center;
 
   color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 58px;
+    top: -122px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 @media (min-width: @tablet-width) {

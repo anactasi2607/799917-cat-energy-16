@@ -1,0 +1,53 @@
+.mission__list {
+  .zero;
+}
+
+.mission {
+  margin-bottom: 42px;
+  padding: 15px 20px;
+
+  border: 1px solid #e6e6e6;
+}
+
+.mission__item {
+  padding: 12px 45px;
+}
+
+.mission__item label {
+  position: relative;
+}
+
+.mission__slim+label,
+.mission__weight-gain+label,
+.mission__unknown+label {
+    &::before {
+    content: "";
+
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -45px;
+    top: -2px;
+
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+  }
+}
+
+.mission__slim:checked+label,
+.mission__weight-gain:checked+label,
+.mission__unknown:checked+label {
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: -37px;
+    top: 5px;
+
+    border: 6px solid #68b738;
+    border-radius: 50%;
+  }
+}
+
