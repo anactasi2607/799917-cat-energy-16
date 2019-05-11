@@ -1,16 +1,20 @@
-.slider-controls-item {
+.slider__controls-item {
   font-family: @oswaldr;
   .size(16px; 20px);
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.slider {
-  padding-left: 43px;
+.slider__list {
+  .zero;
 }
 
-.slider-controls {
+.slider__controls {
   position: relative;
+
+  padding-left: 43px;
+  padding-top: 5px;
+  margin-bottom: 15px;
 
   &:after {
     content: "";
@@ -18,16 +22,45 @@
 
     width: 84px;
     height: 14px;
-    top: 3px;
-    left: 56px;
+    top: 8px;
+    left: 100px;
 
     border: 1px solid #cdcdcd;
     border-radius: 5px;
   }
 }
 
-.slider-controls-item:first-child {
+.slider__controls-item:first-child {
   margin-right: 118px;
+}
+
+.slider__input:checked ~ .slider__controls label {
+  &:before {
+    content: "";
+    position: absolute;
+
+    width: 35px;
+    height: 6px;
+    top: 12px;
+    left: 105px;
+
+    border: 3px solid #68b738;
+    border-radius: 10px;
+  }
+}
+
+.slider__item--before {
+  min-width: 290px;
+  min-height: 300px;
+
+  background-image: url("../img/before-mobile@1x.png");
+  background-position: -20px 32px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/before-mobile@1x.png");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: @tablet-width) {

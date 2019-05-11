@@ -1,18 +1,31 @@
 .options {
+  margin-bottom: 30px;
+
   .border-green;
 }
 
 .options__title {
   width: 185px;
   margin-top: -16px;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   padding-left: 20px;
 
   background-color: #fff;
 }
 
+.options__wrapper {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.options__list {
+  .zero;
+}
+
 .options__item {
   position: relative;
+
+  padding: 12px 45px;
 }
 
 .options__item input + label {
@@ -22,11 +35,20 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    left: -45px;
-    top: -2px;
+    left: 0;
+    top: 6px;
 
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover {
+    &::before {
+      border-color: #bcbcbc;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -37,11 +59,26 @@
     position: absolute;
     width: 21px;
     height: 16px;
-    left: -37px;
-    top: 5px;
+    left: 5px;
+    top: 12px;
 
     background-image: url(../img/icon-tick.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+}
+
+.filter-button {
+  width: 280px;
+  padding: 10px 0;
+  margin-left: 20px;
+  margin-bottom: 22px;
+
+  border: none;
+}
+
+.filter__footnote {
+  .zero;
+
+  text-align: center;
 }

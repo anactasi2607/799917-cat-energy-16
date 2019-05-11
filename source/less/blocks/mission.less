@@ -20,7 +20,7 @@
 .mission__slim+label,
 .mission__weight-gain+label,
 .mission__unknown+label {
-    &::before {
+  &::before {
     content: "";
 
     position: absolute;
@@ -29,8 +29,18 @@
     left: -45px;
     top: -2px;
 
-    border: 1px solid #e6e6e6;
+    border: 1px solid #cecece;
     border-radius: 50%;
+  }
+
+  &:hover {
+    &::before {
+      border-color: #bcbcbc;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

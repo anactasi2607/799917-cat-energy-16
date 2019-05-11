@@ -1,20 +1,30 @@
+.additional-goods {
+  .wrapper;
+
+  .border-green;
+}
+
 .additional-goods__wrapper {
   .wrapper;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 28px;
+
+  border-top: 1px solid #e6e6e6;
 }
 
 .additional-goods__title {
+  width: 265px;
   .zero;
   padding-bottom: 35px;
+  padding-left: 20px;
+  margin-top: -17px;
 
   font-family: @oswaldr;
   .size(24px; 24px);
   font-weight: normal;
 
   color: #111111;
-  .border;
+  background-color: #ffffff;
 }
 
 .additional-goods__list {
@@ -35,11 +45,16 @@
 }
 
 .additional-goods__table {
+  width: 100%;
   margin-bottom: 15px;
 
   line-height: 14px;
 
   border-collapse: collapse;
+}
+
+.additional-goods__price {
+  text-align: right;
 }
 
 .additional-goods__item {
