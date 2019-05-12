@@ -87,12 +87,11 @@
 @media (min-width: @tablet-width) {
   .motivation {
     .zero;
-
-    background-color: #ffffff;
+    .tablet-wrapper;
   }
 
   .motivation__wrapper {
-    .tablet-wrapper;
+    padding: 40px 30px 20px;
   }
 
   .motivation__title {
@@ -107,12 +106,18 @@
   }
 
   .motivation__text {
-    margin-bottom: 65px;
+    margin-bottom: 55px;
 
     .size(16px; 24px);
   }
 
+  .motivation__list tr {
+    margin-right: 40px;
+  }
+
   .motivation__value {
+    width: 162px;
+
     .size(30px; 37px);
   }
 
@@ -121,7 +126,16 @@
   }
 
   .motivation__cost {
+    width: 180px;
+    padding: 9px 0;
+
     .size(20px; 20px);
+    text-align: right;
+
+    span {
+      padding-top: 8px;
+      display: inline-block;
+    }
   }
 }
 

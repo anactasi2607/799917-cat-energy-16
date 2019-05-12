@@ -120,7 +120,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    .border;
+  }
+
   .advantages__item:first-of-type {
+    margin-bottom: 217px;
+
     p {
       &::before {
         content: "1";
@@ -140,6 +146,8 @@
   }
 
   .advantages__item:nth-of-type(2) {
+    margin-bottom: 217px;
+
     p {
       &::before {
         content: "2";
@@ -186,16 +194,17 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+
+    padding-bottom: 75px;
   }
 
   .advantages__item {
     margin: 0 30px;
-    margin-bottom: 72px;
     padding: 0;
     padding-right: 77px;
 
     width: 324px;
-    min-height: 245px;
+    min-height: 100px;
 
     .size(16px; 24px);
 

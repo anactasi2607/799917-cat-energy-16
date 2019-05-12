@@ -63,7 +63,9 @@
   }
 
   .contacts__text {
-    justify-content: space-around;
+    justify-content: space-between;
+
+    padding: 65px 70px 57px;
   }
 
   .contacts__map {
@@ -71,6 +73,35 @@
     height: 397px;
 
     margin: 0 auto;
+  }
+
+  .contacts__invite {
+    .size(20px; 25px);
+  }
+
+  .contacts__address {
+    width: 160px;
+
+    .size(16px; 20px);
+    text-align: right;
+
+    span {
+      display: inline-block;
+      padding-top: 18px;
+    }
+  }
+
+  .contacts__picture {
+    &::before {
+      left: 322px;
+      top: 147px;
+      width: 140px;
+      height: 106px;
+
+      background-image: url("../img/map-pin.png");
+
+      z-index: 5;
+    }
   }
 }
 

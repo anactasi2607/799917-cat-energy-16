@@ -65,7 +65,28 @@
 
 @media (min-width: @tablet-width) {
   .slider {
-    padding-top: 400px;
     background-color: #f2f2f2;
+  }
+
+  .slider__item--before {
+    min-width: 636px;
+    min-height: 550px;
+    background-image: url("../img/slider-tablet@1x.png");
+    background-position: 17px 45px;
+    background-repeat: no-repeat;
+  }
+
+  .slider__controls {
+    padding: 35px 68px;
+  }
+
+  .slider__controls-item {
+    .size(20px; 20px);
+
+    border-bottom: 1px dashed #bebebe;
+  }
+
+  .slider__controls-item:first-child {
+    margin-right: 470px;
   }
 }
