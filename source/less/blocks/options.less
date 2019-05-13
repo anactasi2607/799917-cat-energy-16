@@ -8,7 +8,6 @@
   width: 185px;
   margin-top: -16px;
   margin-bottom: 28px;
-  padding-left: 20px;
 
   background-color: #fff;
 }
@@ -81,4 +80,41 @@
   .zero;
 
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .options__wrapper {
+    .form-padding;
+  }
+
+  .options__title {
+    width: 290px;
+    margin-top: -25px;
+  }
+
+  .options__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .options__item {
+    width: 285px;
+  }
+
+  .options__item input + label {
+    &::before {
+      width: 40px;
+      height: 40px;
+      left: -12px;
+      top: 2px;
+    }
+  }
+
+  .options__item input:checked + label {
+    &::after {
+      left: -2px;
+      top: 14px;
+    }
+  }
+
 }
