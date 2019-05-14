@@ -1,5 +1,5 @@
 .options {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   .border-green;
 }
@@ -14,7 +14,6 @@
 
 .options__wrapper {
   padding: 0 20px;
-  margin-bottom: 30px;
 }
 
 .options__list {
@@ -67,22 +66,11 @@
   }
 }
 
-.filter-button {
-  width: 280px;
-  padding: 10px 0;
-  margin-left: 20px;
-  margin-bottom: 22px;
-
-  border: none;
-}
-
-.filter__footnote {
-  .zero;
-
-  text-align: center;
-}
-
 @media (min-width: @tablet-width) {
+  .options {
+    margin-bottom: 0;
+  }
+
   .options__wrapper {
     .form-padding;
   }
@@ -90,31 +78,38 @@
   .options__title {
     width: 290px;
     margin-top: -25px;
+    margin-bottom: 0;
   }
 
   .options__list {
     display: flex;
     flex-wrap: wrap;
+    padding: 42px 0;
   }
 
   .options__item {
     width: 285px;
+    padding: 25px 60px;
   }
 
   .options__item input + label {
     &::before {
       width: 40px;
       height: 40px;
-      left: -12px;
-      top: 2px;
+      left: 0;
+      top: 16px;
     }
   }
 
   .options__item input:checked + label {
     &::after {
-      left: -2px;
-      top: 14px;
+      left: 13px;
+      top: 27px;
     }
+  }
+
+  .options__list li:nth-child(odd) {
+    margin-right: 59px;
   }
 
 }

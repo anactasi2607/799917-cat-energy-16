@@ -4,37 +4,38 @@
 }
 
 .owner {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   .border-green;
 }
 
 .owner div {
   display: flex;
-
-  padding: 15px 20px 0;
+  padding: 0 20px;
 }
 
 .owner__input {
-  padding: 11px 14px;
+  padding: 13px;
 }
 
 .owner__title {
-  width: 220px;
+  width: 221px;
   margin-top: -16px;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 
   background-color: white;
 }
 
 .owner__mail-label,
 .owner__tel-label {
-  margin-top: 12px;
-  margin-right: 12px;
+  margin-top: 14px;
+  margin-right: 10px;
 }
 
 .owner__column--top {
   position: relative;
+
+  margin-bottom: 12px;
 
   svg {
     position: absolute;
@@ -60,9 +61,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .owner {
+    margin-bottom: 87px;
+  }
+
   .owner__title {
     width: 593px;
     margin-top: -25px;
+    margin-bottom: 76px;
   }
 
   .owner__input {
@@ -71,6 +77,16 @@
 
   .owner div {
     .form-padding;
+    margin-bottom: 18px;
   }
 
+  .owner__mail-label {
+    margin-top: 16px;
+    margin-right: 20px;
+  }
+
+  .owner__tel-label {
+    margin-top: 16px;
+    margin-right: 13px;
+  }
 }
