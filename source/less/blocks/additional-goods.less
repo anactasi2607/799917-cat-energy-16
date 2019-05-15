@@ -5,9 +5,9 @@
 }
 
 .additional-goods__wrapper {
-  .wrapper;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 38px;
 
   border-top: 1px solid #e6e6e6;
 }
@@ -29,7 +29,6 @@
 
 .additional-goods__list {
   .zero;
-  margin-bottom: 38px;
 }
 
 .additional-goods__item-title {
@@ -73,9 +72,9 @@
   }
 
   .additional-goods__wrapper {
-    .tablet-wrapper;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 70px;
 
     border: none;
   }
@@ -97,8 +96,8 @@
   }
 
   .additional-goods__table {
-    width: 227px;
-    margin-top: 4px;
+    width: 230px;
+    margin-top: 9px;
 
     .size(16px; 20px);
   }
@@ -122,5 +121,71 @@
   .additional-goods__button {
     width: 632px;
     margin: 0;
+    margin-top: 5px;
   }
+
+  .additional-goods__quantity {
+    width: 134px;
+    text-align: right;
+  }
+
 }
+
+@media (min-width: @desktop-width) {
+    .additional-goods {
+      .desktop-wrapper;
+
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .additional-goods__title {
+      margin-left: 0;
+    }
+
+    .additional-goods__wrapper {
+      padding-left: 40px;
+      margin-right: 50px;
+    }
+
+    .additional-goods__list {
+      width: 895px;
+    }
+
+    .additional-goods__item:last-of-type {
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .additional-goods__table {
+      width: 300px;
+      margin-bottom: 0;
+    }
+
+    .additional-goods__item {
+      flex-wrap: nowrap;
+      padding: 16px 0 15px 0;
+
+      border: none;
+      border-top: 1px solid #e6e6e6;
+    }
+
+    .additional-goods__item-title {
+      margin-right: 100px;
+      padding: 0;
+    }
+
+    .additional-goods__quantity{
+      width: 220px;
+      text-align: left;
+    }
+
+    .additional-goods__price {
+      text-align: left;
+      width: 50px;
+    }
+
+    .additional-goods__button {
+      width: 245px;
+      margin: 0;
+    }
+  }
