@@ -27,7 +27,7 @@
 }
 
 .motivation__list {
-  margin-bottom: 19px;
+  margin-bottom: 35px;
   margin-right: 30px;
 
   border-collapse: collapse;
@@ -39,13 +39,12 @@
 
 .motivation__list tr {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  position: relative;
   margin-right: 30px;
 }
 
 .motivation__value {
+  display: block;
   width: 125px;
   padding-top: 12px;
   padding-bottom: 18px;
@@ -61,8 +60,10 @@
 }
 
 .motivation__field {
+  position: absolute;
   width: 80px;
-  margin-top: -10px;
+  left: 20px;
+  top: 45px;
 
   font-family: @arial;
   .size(12px; 12px);
@@ -115,6 +116,10 @@
     .size(16px; 24px);
   }
 
+  .motivation__list {
+    margin-bottom: 25px;
+  }
+
   .motivation__list tr {
     margin-right: 40px;
   }
@@ -126,6 +131,8 @@
   }
 
   .motivation__field {
+    top: 60px;
+
     .size(14px; 14px);
 
     background-color: #ffffff;
@@ -136,6 +143,7 @@
   }
 
   .motivation__field--time {
+    left: 13px;
     width: 140px;
   }
 
