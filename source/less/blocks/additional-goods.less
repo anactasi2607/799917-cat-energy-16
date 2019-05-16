@@ -74,7 +74,7 @@
   .additional-goods__wrapper {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 85px;
 
     border: none;
   }
@@ -133,10 +133,18 @@
 
 @media (min-width: @desktop-width) {
     .additional-goods {
-      .desktop-wrapper;
+      min-width: 1300px;
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+    }
 
+    .additional-goods__rubber-wrapper {
       display: flex;
       flex-wrap: wrap;
+
+      width: 1300px;
+      margin: 0 auto;
     }
 
     .additional-goods__title {
@@ -152,9 +160,7 @@
       width: 895px;
     }
 
-    .additional-goods__item:last-of-type {
-      border-bottom: 1px solid #e6e6e6;
-    }
+
 
     .additional-goods__table {
       width: 300px;
@@ -165,8 +171,13 @@
       flex-wrap: nowrap;
       padding: 16px 0 15px 0;
 
-      border: none;
-      border-top: 1px solid #e6e6e6;
+      border-right: none;
+      border-left: none;
+    }
+
+    .additional-goods__item:last-of-type {
+      border-right: none;
+      border-left: none;
     }
 
     .additional-goods__item-title {

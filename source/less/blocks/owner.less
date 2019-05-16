@@ -9,7 +9,8 @@
   .border-green;
 }
 
-.owner div {
+.owner__column--top,
+.owner__column--bottom {
   display: flex;
   padding: 0 20px;
 }
@@ -75,7 +76,8 @@
     padding: 14px 20px;
   }
 
-  .owner div {
+  .owner__column--top,
+  .owner__column--bottom {
     .form-padding;
     margin-bottom: 18px;
   }
@@ -88,5 +90,18 @@
   .owner__tel-label {
     margin-top: 16px;
     margin-right: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .owner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .desktop-wrapper;
+  }
+
+  .owner__title {
+    margin-right: 240px;
   }
 }

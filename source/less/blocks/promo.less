@@ -1,11 +1,25 @@
-.promo {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+@media (max-width: @mobile-width-only) {
+  .promo {
+    position: relative;
+      &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 320px;
+      height: 305px;
+      z-index: -1;
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: 320px auto;
+      background-color: #65a93c;
+      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-mobile@2x.jpg");
+        background-size: 320px auto;
+      }
+    }
   }
 }
 

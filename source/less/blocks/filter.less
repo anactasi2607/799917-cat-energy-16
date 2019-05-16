@@ -7,7 +7,7 @@
   color: #444444;
 }
 
-.filter-button {
+.filter__button {
   width: 280px;
   padding: 11px 0;
   margin-left: 20px;
@@ -24,18 +24,34 @@
 }
 
 @media (min-width: @tablet-width) {
-  .filter-button {
+  .filter__button {
     width: 283px;
-    display: inline-block;
     margin-left: 71px;
-    margin-right: 57px;
+    margin-right: 61px;
     padding: 16px 0;
   }
 
   .filter__footnote {
-    display: inline-block;
+    padding-top: 3px;
 
     .size(16px; 16px);
   }
 
+  .filter__button-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter__top-column {
+    display: flex;
+    justify-content: space-between;
+
+    .desktop-wrapper;
+  }
+
+  .filter__button-wrapper {
+    .desktop-wrapper;
+  }
 }
