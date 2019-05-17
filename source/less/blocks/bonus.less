@@ -4,9 +4,9 @@
 }
 
 .bonus__wrapper {
+  margin-bottom: 35px;
   padding-top: 187px;
   padding-left: 55px;
-  margin-bottom: 35px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
@@ -21,9 +21,11 @@
 
 .bonus__text {
   position: relative;
+
+  width: 170px;
   .zero;
   padding-bottom: 42px;
-  width: 170px;
+
 
   .size(16px; 20px);
   font-weight: normal;
@@ -34,10 +36,12 @@
   &::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
     left: 58px;
     top: -122px;
+
+    width: 60px;
+    height: 60px;
+
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -46,9 +50,9 @@
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .bonus {
+    margin-bottom: 75px;
     padding: 0 30px;
     .tablet-wrapper;
-    margin-bottom: 75px;
   }
 
   .bonus__wrapper {
@@ -65,23 +69,23 @@
   .bonus__text {
     text-align: left;
 
-    &:before {
+    &::before {
       left: -334px;
       top: -5px;
     }
   }
 }
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .bonus {
     width: 245px;
     .zero;
   }
 
   .bonus__wrapper {
+    margin-bottom: 7px;
     padding-top: 187px;
     padding-left: 35px;
-    margin-bottom: 7px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-position: 0 0;

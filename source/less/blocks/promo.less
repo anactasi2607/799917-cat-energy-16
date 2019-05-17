@@ -1,14 +1,16 @@
 @media (max-width: @mobile-width-only) {
   .promo {
     position: relative;
-      &::before {
+
+    &::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
+      z-index: -1;
+
       width: 320px;
       height: 305px;
-      z-index: -1;
 
       background-color: #65a93c;
       background-image: url("../img/index-background-mobile@1x.jpg");
@@ -25,7 +27,9 @@
 
 .promo__wrapper {
   position: relative;
+
   padding-top: 28px;
+
   text-align: center;
 }
 
@@ -33,10 +37,12 @@
   &::before {
     content: "";
     position: absolute;
-    width: 280px;
-    height: 270px;
     left: 20px;
     top: 165px;
+
+    width: 280px;
+    height: 270px;
+
     background-image: url("../img/index-can-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -91,15 +97,15 @@
     position: absolute;
 
     min-width: 245px;
-    padding: 15px 27px 17px 27px;
     margin: 0;
+    padding: 15px 27px 17px 27px;
 
     .size(20px; 20px);
   }
 
   .promo__title {
-    padding-right: 80px;
     margin-bottom: 42px;
+    padding-right: 80px;
 
     .size(60px; 60px);
     text-align: left;
@@ -108,14 +114,12 @@
 
     &::before {
       content: "";
-
       position: absolute;
+      left: 28px;
+      top: 252px;
 
       width: 709px;
       height: 609px;
-
-      left: 28px;
-      top: 252px;
 
       background-image: url("../img/index-can-tablet@1x.jpg");
       background-repeat: no-repeat;
@@ -152,10 +156,12 @@
     &::before {
       content: "";
       position: absolute;
-      width: 552px;
-      height: 499px;
       left: 490px;
       top: 25px;
+
+      width: 552px;
+      height: 499px;
+
       background-image: url("../img/index-can-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: 0 0;

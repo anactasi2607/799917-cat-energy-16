@@ -23,14 +23,14 @@
 .slider__controls-scale {
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
+    top: -18px;
+    left: 58px;
 
     width: 84px;
     height: 14px;
-    top: -18px;
-    left: 58px;
 
     border: 1px solid #cdcdcd;
     border-radius: 5px;
@@ -40,14 +40,14 @@
 .slider__controls-toggle {
   position: relative;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
+    top: -14px;
+    left: 63px;
 
     width: 35px;
     height: 6px;
-    top: -14px;
-    left: 63px;
 
     border: 3px solid #68b738;
     border-radius: 10px;
@@ -72,6 +72,7 @@
   .slider__item--before {
     min-width: 636px;
     min-height: 550px;
+
     background-image: url("../img/slider-tablet@1x.png");
     background-position: 17px 45px;
     background-repeat: no-repeat;
@@ -92,14 +93,14 @@
   }
 
   .slider__controls-scale {
-      &:after {
+    &::after {
       content: "";
       position: absolute;
+      top: -17px;
+      left: 70px;
 
       width: 428px;
       height: 6px;
-      top: -17px;
-      left: 70px;
 
       background-color: #dcdcdc;
       border: none;
@@ -107,45 +108,45 @@
   }
 
   .slider__controls-toggle {
-    &:before {
-        content: "";
-        position: absolute;
-
-        width: 34px;
-        height: 34px;
-        top: -30px;
-        left: 270px;
-        padding: 0;
-        border-radius: 50%;
-        background-color: #68b738;
-        border: 13px solid #fff;
-        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-        cursor: pointer;
-      }
-    }
-
-  .slider__controls-toggle {
-    &:after {
+    &::before {
       content: "";
       position: absolute;
+      top: -30px;
+      left: 270px;
 
       width: 34px;
       height: 34px;
+      padding: 0;
+
+      border-radius: 50%;
+      background-color: #68b738;
+      border: 13px solid #ffffff;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
       top: -30px;
       left: 270px;
+
+      width: 34px;
+      height: 34px;
+
       border-radius: 50%;
       border: 1px solid #cdcdcd;
     }
   }
 
   .slider__controls-toggle:hover {
-    &:before {
-      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    &::before {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
   }
 
   .slider__controls-toggle:active {
-    &:after {
+    &::after {
       border: 2px solid #68b738;
     }
   }
@@ -154,7 +155,7 @@
 @media (min-width: @desktop-width) {
   .slider__item--before {
     background-image: url("../img/slider-desktop@1x.png");
-    background-position: 125px 0px;
+    background-position: 125px 0;
   }
 
   .slider__controls {
