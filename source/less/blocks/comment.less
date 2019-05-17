@@ -1,5 +1,23 @@
 .comment__text {
-  .placeholder;
+  &::-webkit-input-placeholder {
+    color: #444444;
+    text-transform: uppercase;
+  }
+
+  &::-moz-placeholder {
+    color: #444444;
+    text-transform: uppercase;
+  }
+
+  &:-moz-placeholder {
+    color: #444444;
+    text-transform: uppercase;
+  }
+
+  &:-ms-input-placeholder {
+    color: #444444;
+    text-transform: uppercase;
+  }
 
   resize: none;
 }

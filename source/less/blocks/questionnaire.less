@@ -1,7 +1,25 @@
 .questionnaire__name,
 .questionnaire__weight,
 .questionnaire__age {
-  .placeholder;
+  &::-webkit-input-placeholder {
+    color: #444444;
+    text-transform: uppercase;
+  }
+
+  &::-moz-placeholder {
+    color: #444444;
+    text-transform: uppercase;
+  }
+
+  &:-moz-placeholder {
+    color: #444444;
+    text-transform: uppercase;
+  }
+
+  &:-ms-input-placeholder {
+    color: #444444;
+    text-transform: uppercase;
+  }
 }
 
 .questionnaire__wrapper {
