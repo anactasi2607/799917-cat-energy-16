@@ -49,6 +49,16 @@
   }
 }
 
+.options__item input:focus + label {
+  &::before {
+    border-color: #bcbcbc;
+  }
+}
+
+.options__item input:focus:active + label {
+  opacity: 0.3;
+}
+
 .options__item input:checked + label {
   &::after {
     content: "";

@@ -45,6 +45,14 @@
   }
 }
 
+.mission__slim:focus + label,
+.mission__weight-gain:focus + label,
+.mission__unknown:focus + label {
+  &::before {
+    border-color: #bcbcbc;
+  }
+}
+
 .mission__slim:checked + label,
 .mission__weight-gain:checked + label,
 .mission__unknown:checked + label {

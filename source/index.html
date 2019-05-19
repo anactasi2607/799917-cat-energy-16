@@ -23,11 +23,12 @@
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="38" alt="Интернет-магазин питания для котов Cat Energy">
           </picture>
         </a>
-        <nav class="page-header__menu main-nav main-nav--opened">
+        <nav class="page-header__menu main-nav main-nav--nojs">
+          <!--Класс main-nav--nojs работает при отсутствии js, класс .main-nav--opened открывает меню, класс .main-nav--closed закрывает меню-->
           <a class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></a>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item site-list__link--active">
                 <a class="site-list__link site-list__link--desktop">Главная</a>
               </li>
               <li class="site-list__item">
@@ -109,7 +110,7 @@
               <label class="slider__controls-item" for="cat-2">Стало</label>
               <div class="slider__controls-range">
                 <div class="slider__controls-scale"></div>
-                <div class="slider__controls-toggle"></div>
+                <div class="slider__controls-toggle"><span class="visually-hidden">Тумблер для перелистывания слайдера</span></div>
               </div>
             </div>
           </div>

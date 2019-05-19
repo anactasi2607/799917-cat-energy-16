@@ -50,7 +50,7 @@
     font-weight: normal;
   }
 
-  .site-list__item--active {
+  .site-list__link--active {
     position: relative;
 
     &::before {
@@ -68,8 +68,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .site-list--catalog .site-list__item--active,
-  .site-list--form .site-list__item--active {
+  .site-list--catalog .site-list__link--active,
+  .site-list--form .site-list__link--active {
     &::before {
       border-bottom: 2px solid #68b738;
     }
@@ -87,7 +87,7 @@
     min-width: 480px;
   }
 
-  .site-list__item--active {
+  .site-list__link--active {
     &::before {
       border-bottom: 2px solid #ffffff;
     }
