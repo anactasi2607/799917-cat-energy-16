@@ -1,5 +1,5 @@
 @media (max-width: @mobile-width-only) {
-  .promo {
+  .promo__wrapper {
     position: relative;
 
     &::before {
@@ -7,7 +7,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1;
+      z-index: 0;
 
       width: 320px;
       height: 305px;
@@ -23,11 +23,16 @@
       }
     }
   }
+
+  .promo {
+    background-image: linear-gradient(#65a93c 305px, #ffffff 305px);
+  }
 }
 
 .promo__wrapper {
   position: relative;
 
+  .wrapper;
   padding-top: 28px;
 
   text-align: center;
@@ -142,6 +147,7 @@
   }
 
   .promo__wrapper {
+    .tablet-wrapper;
     padding-left: 118px;
     padding-top: 52px;
   }
@@ -176,6 +182,7 @@
   }
 
   .promo__wrapper {
+    .desktop-wrapper;
     padding-left: 120px;
     padding-top: 104px;
   }
