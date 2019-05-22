@@ -93,7 +93,7 @@
 
   .catalog__wrapper {
     width: @tablet-width;
-    padding: 53px 30px 0;
+    padding-top: 53px;
   }
 
   .catalog__title {
@@ -104,12 +104,11 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .catalog__item div {
     padding: 0 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .catalog__item {
@@ -117,13 +116,13 @@
 
     flex-direction: column;
     width: 324px;
-    margin: 70px 0 70px;
+    margin: 70px 30px 70px;
     padding: 0;
 
     border: none;
   }
 
-  .catalog__item:not(:last-of-type) {
+  .catalog__item {
     background-color: #f2f2f2;
   }
 
@@ -190,9 +189,13 @@
     margin-bottom: 24px;
   }
 
+  .catalog__title {
+    margin-left: 40px;
+  }
+
   .catalog__wrapper {
     width: @desktop-width;
-    padding: 68px 40px 0;
+    padding-top: 70px;
   }
 
   .catalog__item-title {
@@ -202,6 +205,8 @@
   .catalog__item {
     width: 245px;
     margin: 70px 0 72px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .catalog__img {
