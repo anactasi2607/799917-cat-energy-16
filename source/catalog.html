@@ -24,7 +24,7 @@
           </picture>
         </a>
         <nav class="page-header__menu main-nav main-nav--nojs">
-          <!--Класс main-nav--nojs работает при отсутствии js, класс .main-nav--opened открывает меню, класс .main-nav--closed закрывает меню-->
+          <!--Класс main-nav с модификатором "nojs" работает при отсутствии js, класс "main-nav" с модификатором "opened" открывает меню, класс "main-nav" с модификатором "closed" закрывает меню-->
           <a class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></a>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list site-list--catalog">
@@ -428,6 +428,11 @@
           </div>
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558114715492!5m2!1sru!2sru"></iframe>
+            <picture class="contacts__picture">
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+              <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </picture>
           </div>
         </div>
       </section>
