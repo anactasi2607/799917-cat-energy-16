@@ -23,11 +23,10 @@
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="38" alt="Интернет-магазин питания для котов Cat Energy">
           </picture>
         </a>
-        <nav class="page-header__menu main-nav main-nav--nojs">
-          <!--Класс main-nav с модификатором "nojs" работает при отсутствии js, класс "main-nav" с модификатором "opened" открывает меню, класс "main-nav" с модификатором "closed" закрывает меню-->
-          <a class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></a>
+        <nav class="page-header__menu main-nav">
+          <a class="main-nav__toggle main-nav__toggle--nojs"><span class="visually-hidden">Открыть меню</span></a><!--с модификатором "nojs" работает при отсутствии js, с модификатором "opened" открывает меню, с модификатором "closed" закрывает меню-->
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list site-list--form">
+            <ul class="main-nav__list site-list site-list--form site-list--nojs"><!--с модификатором "nojs" работает при отсутствии js, с модификатором "opened" открывает меню, с модификатором "closed" закрывает меню-->
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
@@ -184,5 +183,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/popup.js"></script>
   </body>
 </html>
